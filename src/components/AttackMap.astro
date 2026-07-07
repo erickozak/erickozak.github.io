@@ -1,0 +1,66 @@
+---
+import { TACTICS, TECHNIQUES } from '../data/attack';
+import { coveredTechniques, type Post } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+const covered = coveredTechniques(posts);
+const coveredCount = [...covered.keys()].filter((id) =>
+  TECHNIQUES.some((t) => t.id === id)
+).length;
+
+// Drift check at build time: posts can reference any valid ATT&CK ID, but a
+// cell only lights if the ID exists in src/data/attack.ts. Warn loudly in the
+// build log so the reference data keeps pace with the writing.
+const missing = [...covered.keys()].filter(
+  (id) => !TECHNIQUES.some((t) => t.id === id)
+);
+if (missing.length > 0) {
+  console.warn(
+    `\n[attack-map] covered by posts but missing from src/data/attack.ts: ` +
+      `${missing.join(', ')} — add entries there to light their cells\n`
+  );
+}
+---
+
+<div class="amap" role="list" aria-label="ATT&CK technique coverage map">
+  {
+    TACTICS.map((tac) => (
+      <div class="amap-col" role="listitem">
+        <span class="amap-tac" title={tac.name}>
+          {tac.short}
+        </span>
+        {TECHNIQUES.filter((t) => t.tactic === tac.id).map((t) => {
+          const hit = covered.get(t.id);
+          const label = `${t.id} ${t.name}`;
+          return hit ? (
+            <a
+              class="amap-cell amap-cell--on"
+              href={`/writing/${hit.latest.id}/`}
+              title={`${label} — ${hit.count} post${hit.count === 1 ? '' : 's'}`}
+              aria-label={`${label}, covered in ${hit.count} post${hit.count === 1 ? '' : 's'}`}
+            />
+          ) : (
+            <span class="amap-cell" title={label} />
+          );
+        })}
+      </div>
+    ))
+  }
+</div>
+<p class="amap-legend">
+  <span class="amap-count">{coveredCount}</span>/{TECHNIQUES.length} techniques
+  covered · lit cells link to the writing
+  {
+    coveredCount === 0 && (
+      <>
+        <br />
+        # tag posts with <code>techniques: ['T1566']</code> frontmatter to
+        light the map
+      </>
+    )
+  }
+</p>

@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import { PROMPT } from '../consts';
+---
+
+<Base title="404 — not found" description="Page not found.">
+  <section class="hero">
+    <div class="wrap">
+      <div class="term" style="max-width: 640px;">
+        <div class="term-bar" aria-hidden="true">
+          <span class="term-dot"></span>
+          <span class="term-dot"></span>
+          <span class="term-dot"></span>
+          <span class="term-title">{PROMPT}: ~</span>
+        </div>
+        <div class="term-body">
+          <div class="term-line term-cmd">
+            <span class="term-ps1">$</span> cd {'{requested page}'}
+          </div>
+          <div class="term-line term-out">
+            bash: cd: no such file or directory <span class="status">404</span>
+          </div>
+          <div class="term-line term-cmd" style="margin-top: 0.9em;">
+            <span class="term-ps1">$</span>
+            <a href="/">cd ~</a>
+            <span class="cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

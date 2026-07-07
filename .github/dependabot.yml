@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # Keep the GitHub Actions in deploy.yml current.
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+
+  # Keep Astro and integrations patched.
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    groups:
+      astro:
+        patterns:
+          - 'astro'
+          - '@astrojs/*'

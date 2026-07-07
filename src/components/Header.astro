@@ -1,0 +1,39 @@
+---
+import { PROMPT } from '../consts';
+
+const path = Astro.url.pathname;
+const isCurrent = (href: string) =>
+  href === '/' ? path === '/' : path.startsWith(href);
+
+const links = [
+  { href: '/writing/', label: 'writing' },
+  { href: '/projects/', label: 'projects' },
+  { href: '/about/', label: 'about' },
+  { href: '/rss.xml', label: 'rss' },
+];
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Home">
+      {PROMPT}<span class="brand-glyph">:~$</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      {
+        links.map((l) => (
+          <a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>
+            {l.label}
+          </a>
+        ))
+      }
+      <button
+        type="button"
+        class="nav-console"
+        data-console-toggle
+        aria-label="Open the site console"
+      >
+        <kbd>`</kbd>console
+      </button>
+    </nav>
+  </div>
+</header>

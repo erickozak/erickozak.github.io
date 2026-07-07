@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../consts';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = SITE.title, description = SITE.description } = Astro.props;
+const canonical = Astro.site
+  ? new URL(Astro.url.pathname, Astro.site)
+  : undefined;
+
+/**
+ * Content-Security-Policy via <meta>, production only (the dev server needs
+ * inline scripts for HMR). GitHub Pages can't set response headers, so this
+ * is the strongest CSP available there. script-src/connect-src are 'self'
+ * only: the single script is the self-hosted, dependency-free console
+ * (/console.js), which fetches /console-manifest.json from this origin.
+ * No third-party code executes here, ever.
+ */
+const csp = [
+  "default-src 'none'",
+  "script-src 'self'",
+  "connect-src 'self'",
+  "img-src 'self' data:",
+  "style-src 'unsafe-inline'",
+  "font-src 'self'",
+  "base-uri 'none'",
+  "form-action 'none'",
+].join('; ');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {import.meta.env.PROD && (
+      <meta http-equiv="Content-Security-Policy" content={csp} />
+    )}
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b0f17" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={SITE.title}
+      href="/rss.xml"
+    />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <script is:inline defer src="/console.js"></script>
+  </body>
+</html>

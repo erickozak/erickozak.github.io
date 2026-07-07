@@ -1,0 +1,49 @@
+# Nightly threat-signals sync.
+#
+# Fetches the newest CISA KEV entries into src/data/signals.json. If entries
+# changed, commits the data and explicitly dispatches the deploy workflow.
+#
+# Why the explicit dispatch: pushes made with GITHUB_TOKEN intentionally do
+# NOT trigger `push` workflows or Pages builds (GitHub's recursion guard).
+# workflow_dispatch events always run, and firing one from here requires the
+# `actions: write` permission below.
+# Ref: https://docs.github.com/en/actions/concepts/security/github_token
+name: Sync threat signals
+
+on:
+  schedule:
+    - cron: '17 6 * * *' # nightly, 06:17 UTC (off the hour to dodge cron rush)
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit updated signals data
+  actions: write # dispatch the deploy workflow
+
+concurrency:
+  group: signals
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Fetch newest KEV entries
+        run: node scripts/update-signals.mjs
+
+      - name: Commit and deploy if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- src/data/signals.json; then
+            echo "No new signals — skipping commit and deploy."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/signals.json
+          git commit -m "signals: sync CISA KEV"
+          git push
+          gh workflow run deploy.yml --ref main

@@ -1,0 +1,79 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { getPosts, isoDate, readingTime, type Post } from '../../lib/posts';
+import { SITE } from '../../consts';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: Post;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, description, pubDate, updatedDate, tags, techniques, draft } =
+  post.data;
+const mins = readingTime(post.body);
+
+/** T1078.004 → https://attack.mitre.org/techniques/T1078/004/ */
+const attackUrl = (t: string) =>
+  `https://attack.mitre.org/techniques/${t.replace('.', '/')}/`;
+---
+
+<Base title={`${title} — ${SITE.author}`} description={description}>
+  <article class="wrap">
+    <header class="post-header">
+      <a class="crumb" href="/writing/">← ~/writing</a>
+      <h1>{title}</h1>
+      <div class="post-meta">
+        <time datetime={pubDate.toISOString()}>{isoDate(pubDate)}</time>
+        {
+          updatedDate && (
+            <span>
+              updated <time datetime={updatedDate.toISOString()}>{isoDate(updatedDate)}</time>
+            </span>
+          )
+        }
+        <span>{mins} min read</span>
+        {draft && <span class="status">draft</span>}
+        {
+          tags.length > 0 && (
+            <ul class="tags">
+              {tags.map((t) => (
+                <li>{t}</li>
+              ))}
+            </ul>
+          )
+        }
+        {
+          techniques.length > 0 && (
+            <ul class="tags tech-chips">
+              {techniques.map((t) => (
+                <li>
+                  <a class="techchip" href={attackUrl(t)} rel="noopener">
+                    {t}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
+    </header>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <p style="padding-bottom: 56px;">
+      <a class="crumb" href="/writing/">$ cd ~/writing</a>
+    </p>
+  </article>
+</Base>

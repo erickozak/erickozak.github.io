@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { projects } from '../data/projects';
+import { SITE } from '../consts';
+---
+
+<Base
+  title={`projects — ${SITE.author}`}
+  description="Tools, labs, and open work in detection engineering, CTI, and security automation."
+>
+  <section class="hero" style="padding-block-end: 24px;">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom: 12px;">
+        <span class="sec-path"><span class="tilde">~</span>/projects</span>
+      </div>
+      <p class="lede" style="margin-bottom: 0;">
+        Things I build and maintain. Mostly reusable tooling — runbooks,
+        pipelines, and lab infrastructure — because one-off fixes don't scale.
+      </p>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-block: 8px 72px;">
+    <div class="card-grid">
+      {
+        projects.map((p) => (
+          <div class="card">
+            <span class="card-path">{p.path}</span>
+            <h3>
+              {p.link ? <a href={p.link}>{p.name}</a> : p.name}
+              <span class={`status status--${p.status}`}>{p.status}</span>
+            </h3>
+            <p>{p.description}</p>
+            <ul class="tags">
+              {p.tags.map((t) => (
+                <li>{t}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Base>

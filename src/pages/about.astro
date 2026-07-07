@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../consts';
+---
+
+<Base
+  title={`about — ${SITE.author}`}
+  description="Who I am, how I think about defense, and how to reach me."
+>
+  <article class="wrap">
+    <header class="post-header">
+      <span class="sec-path"><span class="tilde">~</span>/about</span>
+      <h1>$ whoami</h1>
+    </header>
+
+    <div class="prose">
+      <p>
+        I'm {SITE.author} — a security engineer working the blue team side of
+        the fence: detection engineering, cyber threat intelligence, and the
+        automation that ties a security operation together.
+      </p>
+
+      <!-- TODO: replace with your actual background — roles, years, the short
+           version of how you got here. Two or three paragraphs is plenty. -->
+      <p>
+        By day I lead security engineering for a managed security provider,
+        which means I see a lot of environments, a lot of alerts, and a lot of
+        ways things break. This site is where I write down what generalizes.
+      </p>
+
+      <h2>How I think about defense</h2>
+      <p>
+        Threat-informed, not checklist-informed. I ground detection work in
+        MITRE ATT&CK, assume compromise rather than hoping for prevention, and
+        believe a defense you haven't validated is a defense you don't have.
+        Continuous validation beats annual assessment.
+      </p>
+      <p>
+        I also think security people should understand the business they
+        protect. The best control is worthless if it fights how the
+        organization actually works — seeing the whole system is part of the
+        job, not a distraction from it.
+      </p>
+
+      <h2>On automation</h2>
+      <p>
+        I'm bullish. We're at a genuine turning point: automation and AI are
+        collapsing the cost of work that used to eat analyst hours —
+        enrichment, triage, correlation, documentation. The teams that treat
+        this as an engineering discipline, with testing and version control
+        and honest failure analysis, are going to pull far ahead of the teams
+        that treat it as a product to buy. I write about the difference.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Find me on <a href={SITE.github}>GitHub</a> and{' '}
+        <a href={SITE.linkedin}>LinkedIn</a>{
+          SITE.email && (
+            <>
+              , or reach me by{' '}
+              <a href={`mailto:${SITE.email}`}>email</a>
+            </>
+          )
+        }.
+      </p>
+
+      <h2>Colophon</h2>
+      <p>
+        Built with Astro, published as plain static files, written in
+        markdown. No JavaScript, no analytics, no cookies — the page you see
+        is the page that was pushed. Type is IBM Plex Mono; the amber is for
+        the phosphor terminals that started all of this.
+      </p>
+    </div>
+  </article>
+</Base>

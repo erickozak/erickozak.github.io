@@ -1,0 +1,130 @@
+---
+import { isoDate, type Post } from '../lib/posts';
+
+interface Props {
+  latest: Post | undefined;
+}
+
+const { latest } = Astro.props;
+const today = new Date().toISOString().slice(0, 10);
+---
+
+<!--
+  A small network under watch. One 12s loop: benign traffic flows, an intrusion
+  lands on ws-14, lateral movement is attempted, the sensor detects, the host
+  is contained, monitoring resumes. Pure SVG + CSS; under prefers-reduced-motion
+  it renders the calm contained end-state, static.
+-->
+<div class="term" aria-label="Network monitoring panel">
+  <div class="term-bar">
+    <span class="term-dot" aria-hidden="true"></span>
+    <span class="term-dot" aria-hidden="true"></span>
+    <span class="term-dot" aria-hidden="true"></span>
+    <span class="term-title">ndr — live topology</span>
+    <span class="topo-state">
+      <span class="st-mon">● monitoring</span>
+      <span class="st-alert">▲ alert: T1021</span>
+      <span class="st-cont">● contained</span>
+    </span>
+  </div>
+  <div class="term-body">
+    <svg
+      class="topo"
+      viewBox="0 0 500 310"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="Animated network diagram: an intrusion is detected and contained"
+    >
+      <!-- edges -->
+      <line class="edge" x1="48" y1="50" x2="155" y2="108"></line>
+      <line class="edge" x1="155" y1="108" x2="295" y2="55"></line>
+      <line class="edge" x1="295" y1="55" x2="425" y2="110"></line>
+      <line class="edge" x1="155" y1="108" x2="245" y2="205"></line>
+      <line class="edge" x1="245" y1="205" x2="380" y2="245"></line>
+      <line class="edge edge--tap" x1="90" y1="245" x2="155" y2="108"></line>
+      <line class="edge edge--tap" x1="90" y1="245" x2="245" y2="205"></line>
+
+      <!-- lateral movement attempt overlay (ws-14 → ws-22) -->
+      <line class="lat" x1="245" y1="205" x2="380" y2="245"></line>
+
+      <!-- detection pulse from the sensor -->
+      <circle class="ring" cx="90" cy="245" r="10"></circle>
+
+      <!-- compromise pulse + containment ring on ws-14 -->
+      <circle class="halo" cx="245" cy="205" r="13"></circle>
+      <circle class="contain" cx="245" cy="205" r="17"></circle>
+
+      <!-- nodes -->
+      <g transform="translate(48,50)">
+        <circle class="n-core" r="10"></circle>
+        <text class="n-label" text-anchor="middle" y="-17">inet</text>
+      </g>
+      <g transform="translate(155,108)">
+        <circle class="n-core" r="10"></circle>
+        <text class="n-label" text-anchor="middle" y="27">fw-01</text>
+      </g>
+      <g transform="translate(295,55)">
+        <circle class="n-core" r="10"></circle>
+        <text class="n-label" text-anchor="middle" y="-17">srv-web</text>
+      </g>
+      <g transform="translate(425,110)">
+        <circle class="n-core" r="10"></circle>
+        <text class="n-label" text-anchor="middle" y="27">srv-db</text>
+      </g>
+      <g transform="translate(245,205)">
+        <circle class="n-core" r="10"></circle>
+        <text class="n-label" text-anchor="middle" y="30">ws-14</text>
+      </g>
+      <g transform="translate(380,245)">
+        <circle class="n-core" r="10"></circle>
+        <text class="n-label" text-anchor="middle" y="30">ws-22</text>
+      </g>
+      <g transform="translate(90,245)">
+        <circle class="n-core n-core--sensor" r="10"></circle>
+        <text class="n-label" text-anchor="middle" y="30">sensor</text>
+      </g>
+
+      <!-- packets (offset-path travel; choreography in global.css) -->
+      <circle
+        class="pkt pkt-a"
+        r="3.2"
+        style="offset-path: path('M48,50 L155,108 L295,55')"></circle>
+      <circle
+        class="pkt pkt-b"
+        r="3.2"
+        style="offset-path: path('M295,55 L425,110')"></circle>
+      <circle
+        class="pkt pkt--evil pkt-e"
+        r="3.4"
+        style="offset-path: path('M48,50 L155,108 L245,205')"></circle>
+    </svg>
+
+    <div class="logstrip" aria-hidden="true">
+      <span class="logline log-1">
+        <span class="log-time">{today}T09:12:04Z</span> conn 203.0.113.7 → fw-01:443
+        <span class="log-ok">allow</span>
+      </span>
+      <span class="logline log-2">
+        <span class="log-time">{today}T09:12:31Z</span>
+        <span class="log-alert">alert</span> T1021 lateral rdp ws-14 → ws-22
+        <span class="log-ok">blocked</span>
+      </span>
+      <span class="logline log-3">
+        {
+          latest ? (
+            <>
+              <span class="log-time">{isoDate(latest.data.pubDate)}</span>{' '}
+              <span class="log-level">INFO</span> new_post{' '}
+              <a href={`/writing/${latest.id}/`}>{latest.data.title}</a>
+            </>
+          ) : (
+            <>
+              <span class="log-time">--</span>{' '}
+              <span class="log-level">INFO</span> waiting for first post
+            </>
+          )
+        }
+      </span>
+    </div>
+  </div>
+</div>

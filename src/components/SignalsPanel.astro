@@ -1,0 +1,53 @@
+---
+import signals from '../data/signals.json';
+
+interface SignalItem {
+  cve: string;
+  name: string;
+  vendor: string;
+  product: string;
+  dateAdded: string;
+  ransomware: boolean;
+}
+
+const items = (signals.items as SignalItem[]) ?? [];
+const updated = signals.updated as string | null;
+---
+
+{
+  items.length > 0 ? (
+    <div>
+      {items.map((s) => (
+        <div class="sigrow">
+          <time datetime={s.dateAdded}>{s.dateAdded}</time>
+          <a
+            class="sig-cve"
+            href={`https://nvd.nist.gov/vuln/detail/${s.cve}`}
+            rel="noopener"
+          >
+            {s.cve}
+          </a>
+          <span class="sig-name">
+            {s.vendor} {s.product} — {s.name}
+            {s.ransomware && <span class="sig-chip">ransomware</span>}
+          </span>
+        </div>
+      ))}
+      <p class="sig-meta">
+        source: CISA KEV catalog · syncs nightly via Actions
+        {updated && ` · last new entries ${updated.slice(0, 10)}`}
+      </p>
+    </div>
+  ) : (
+    <div class="sig-empty">
+      <p style="margin: 0 0 6px;">
+        $ ./sync-signals <span class="cmt"># first sync pending</span>
+      </p>
+      <p class="cmt" style="margin: 0;">
+        # newest CISA KEV entries land here nightly via a scheduled Action.
+        <br />
+        # populate now: node scripts/update-signals.mjs
+      </p>
+    </div>
+  )
+}

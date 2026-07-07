@@ -1,0 +1,104 @@
+---
+import Base from '../layouts/Base.astro';
+import IntrusionHero from '../components/IntrusionHero.astro';
+import SignalsPanel from '../components/SignalsPanel.astro';
+import AttackMap from '../components/AttackMap.astro';
+import PostRow from '../components/PostRow.astro';
+import { getPosts } from '../lib/posts';
+import { projects } from '../data/projects';
+
+const posts = await getPosts();
+const latest = posts.slice(0, 3);
+---
+
+<Base>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>
+          Blue team engineering, threat intel, and the
+          <span class="accent">automation turning point</span>.
+        </h1>
+        <p class="lede">
+          I defend networks for a living — detection engineering, CTI, and the
+          operational glue between tools. Automation is changing what a small
+          defensive team can do, and I'm writing down what actually works.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn--primary" href="/writing/">read the writing</a>
+          <a class="btn" href="/about/">whoami</a>
+        </div>
+        <p class="hero-hint">
+          <span class="hint-key"
+            ># tip: press <kbd>`</kbd> anywhere — this site has a console</span
+          >
+          <span class="hint-tap"
+            ># tip: tap <kbd>`console</kbd> in the header — this site has a
+            shell</span
+          >
+        </p>
+      </div>
+      <IntrusionHero latest={latest[0]} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-path"><span class="tilde">~</span>/writing</span>
+        <a class="sec-more" href="/writing/">view all →</a>
+      </div>
+      <div class="postlist">
+        {latest.map((post) => <PostRow post={post} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-path"><span class="tilde">~</span>/attack-map</span>
+        <span class="sec-more">what the writing covers</span>
+      </div>
+      <AttackMap posts={posts} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-path"><span class="tilde">~</span>/projects</span>
+        <a class="sec-more" href="/projects/">view all →</a>
+      </div>
+      <div class="card-grid">
+        {
+          projects.slice(0, 3).map((p) => (
+            <div class="card">
+              <span class="card-path">{p.path}</span>
+              <h3>
+                {p.link ? <a href={p.link}>{p.name}</a> : p.name}
+                <span class={`status status--${p.status}`}>{p.status}</span>
+              </h3>
+              <p>{p.description}</p>
+              <ul class="tags">
+                {p.tags.map((t) => (
+                  <li>{t}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-path"><span class="tilde">~</span>/signals</span>
+        <span class="sec-more">newest known-exploited vulns</span>
+      </div>
+      <SignalsPanel />
+    </div>
+  </section>
+</Base>

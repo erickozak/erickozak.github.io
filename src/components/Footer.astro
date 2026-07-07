@@ -1,0 +1,45 @@
+---
+import { SITE, PROMPT } from '../consts';
+import { BUILD } from '../lib/build';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="statusline">
+      <span class="seg">
+        <span class="mode">[0]</span>
+        <span>{PROMPT}</span>
+      </span>
+      <span class="seg">
+        <span class="ok-dot">●</span> up · build {BUILD.sha} · {BUILD.date}
+      </span>
+      <button class="seg" id="console-hint" type="button" data-console-toggle>
+        <kbd>`</kbd> console
+      </button>
+      <span class="seg"><a href="/rss.xml">rss</a></span>
+      {SITE.github && <span class="seg"><a href={SITE.github}>github</a></span>}
+      {
+        SITE.linkedin && (
+          <span class="seg">
+            <a href={SITE.linkedin}>linkedin</a>
+          </span>
+        )
+      }
+      {
+        SITE.email && (
+          <span class="seg">
+            <a href={`mailto:${SITE.email}`}>email</a>
+          </span>
+        )
+      }
+      <span class="seg">{year}</span>
+    </div>
+    <p class="footer-note">
+      © {year} {SITE.author} · static site — no trackers, no cookies, no
+      third-party code. press <kbd style="font-size:inherit">`</kbd> for the
+      console.
+    </p>
+  </div>
+</footer>

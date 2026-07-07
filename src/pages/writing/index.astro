@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostRow from '../../components/PostRow.astro';
+import { getPosts } from '../../lib/posts';
+import { SITE } from '../../consts';
+
+const posts = await getPosts();
+
+const byYear = new Map<number, typeof posts>();
+for (const post of posts) {
+  const y = post.data.pubDate.getUTCFullYear();
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(post);
+}
+const years = [...byYear.keys()].sort((a, b) => b - a);
+---
+
+<Base
+  title={`writing — ${SITE.author}`}
+  description="All posts: blue team engineering, threat intelligence, and security automation."
+>
+  <section class="hero" style="padding-block-end: 8px;">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom: 0;">
+        <span class="sec-path"><span class="tilde">~</span>/writing</span>
+        <span class="sec-more">{posts.length} post{posts.length === 1 ? '' : 's'}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-block: 12px 64px;">
+    {
+      years.map((year) => (
+        <>
+          <p class="year-mark">{year}</p>
+          <div class="postlist">
+            {byYear.get(year)!.map((post) => (
+              <PostRow post={post} />
+            ))}
+          </div>
+        </>
+      ))
+    }
+  </section>
+</Base>
