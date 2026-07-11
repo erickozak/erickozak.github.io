@@ -1,8 +1,24 @@
 {
-  "updated": "2026-07-08T08:44:41.637Z",
+  "updated": "2026-07-11T08:15:09.718Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.07",
+  "catalogVersion": "2026.07.10",
   "items": [
+    {
+      "cve": "CVE-2026-56291",
+      "name": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Balbooa",
+      "product": "Forms",
+      "dateAdded": "2026-07-10",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-48939",
+      "name": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "iCagenda",
+      "product": "iCagenda",
+      "dateAdded": "2026-07-10",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-48908",
       "name": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "Adobe",
       "product": "ColdFusion",
       "dateAdded": "2026-07-07",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-45659",
-      "name": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "dateAdded": "2026-07-01",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-48558",
-      "name": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "dateAdded": "2026-06-29",
       "ransomware": false
     }
   ]
