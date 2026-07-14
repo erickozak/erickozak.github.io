@@ -1,8 +1,16 @@
 {
-  "updated": "2026-07-11T08:15:09.718Z",
+  "updated": "2026-07-14T08:28:33.019Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.10",
+  "catalogVersion": "2026.07.13",
   "items": [
+    {
+      "cve": "CVE-2008-4128",
+      "name": "Cisco IOS Cross-Site Request Forgery Vulnerability",
+      "vendor": "Cisco",
+      "product": "IOS",
+      "dateAdded": "2026-07-13",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-56291",
       "name": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
@@ -40,14 +48,6 @@
       "name": "Joomlack Page Builder Improper Access Control Vulnerability",
       "vendor": "Joomlack",
       "product": "Page Builder",
-      "dateAdded": "2026-07-07",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-48282",
-      "name": "Adobe ColdFusion Path Traversal Vulnerability",
-      "vendor": "Adobe",
-      "product": "ColdFusion",
       "dateAdded": "2026-07-07",
       "ransomware": false
     }
