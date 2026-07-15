@@ -1,8 +1,40 @@
 {
-  "updated": "2026-07-14T08:28:33.019Z",
+  "updated": "2026-07-15T08:36:30.929Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.13",
+  "catalogVersion": "2026.07.14",
   "items": [
+    {
+      "cve": "CVE-2026-56155",
+      "name": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
+      "vendor": "Microsoft",
+      "product": "Active Directory Federation Services",
+      "dateAdded": "2026-07-14",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-56164",
+      "name": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint Server",
+      "dateAdded": "2026-07-14",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-15409",
+      "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "dateAdded": "2026-07-14",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-15410",
+      "name": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "dateAdded": "2026-07-14",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2008-4128",
       "name": "Cisco IOS Cross-Site Request Forgery Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "Balbooa",
       "product": "Forms",
       "dateAdded": "2026-07-10",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-48939",
-      "name": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "iCagenda",
-      "product": "iCagenda",
-      "dateAdded": "2026-07-10",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-48908",
-      "name": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "JoomShaper",
-      "product": "SP Page Builder",
-      "dateAdded": "2026-07-07",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-55255",
-      "name": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
-      "vendor": "Langflow",
-      "product": "Langflow",
-      "dateAdded": "2026-07-07",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-56290",
-      "name": "Joomlack Page Builder Improper Access Control Vulnerability",
-      "vendor": "Joomlack",
-      "product": "Page Builder",
-      "dateAdded": "2026-07-07",
       "ransomware": false
     }
   ]
