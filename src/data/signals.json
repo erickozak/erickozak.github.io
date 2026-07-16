@@ -1,8 +1,24 @@
 {
-  "updated": "2026-07-15T08:36:30.929Z",
+  "updated": "2026-07-16T08:35:18.739Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.14",
+  "catalogVersion": "2026.07.15",
   "items": [
+    {
+      "cve": "CVE-2026-46817",
+      "name": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
+      "vendor": "Oracle",
+      "product": "E-Business Suite",
+      "dateAdded": "2026-07-15",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-4346",
+      "name": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
+      "vendor": "KNX Association",
+      "product": "KNX Protocol Connection Authorization Option 1",
+      "dateAdded": "2026-07-15",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-56155",
       "name": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
@@ -33,22 +49,6 @@
       "vendor": "SonicWall",
       "product": "SMA1000 Appliances",
       "dateAdded": "2026-07-14",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2008-4128",
-      "name": "Cisco IOS Cross-Site Request Forgery Vulnerability",
-      "vendor": "Cisco",
-      "product": "IOS",
-      "dateAdded": "2026-07-13",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-56291",
-      "name": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Balbooa",
-      "product": "Forms",
-      "dateAdded": "2026-07-10",
       "ransomware": false
     }
   ]
