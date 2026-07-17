@@ -1,8 +1,32 @@
 {
-  "updated": "2026-07-16T08:35:18.739Z",
+  "updated": "2026-07-17T08:28:53.862Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.15",
+  "catalogVersion": "2026.07.16",
   "items": [
+    {
+      "cve": "CVE-2026-58644",
+      "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "dateAdded": "2026-07-16",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-25089",
+      "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "dateAdded": "2026-07-16",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-39808",
+      "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "dateAdded": "2026-07-16",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-46817",
       "name": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
@@ -24,30 +48,6 @@
       "name": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
       "vendor": "Microsoft",
       "product": "Active Directory Federation Services",
-      "dateAdded": "2026-07-14",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-56164",
-      "name": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "dateAdded": "2026-07-14",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-15409",
-      "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "dateAdded": "2026-07-14",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-15410",
-      "name": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
       "dateAdded": "2026-07-14",
       "ransomware": false
     }
