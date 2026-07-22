@@ -1,8 +1,40 @@
 {
-  "updated": "2026-07-17T08:28:53.862Z",
+  "updated": "2026-07-22T08:45:30.758Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.16",
+  "catalogVersion": "2026.07.21",
   "items": [
+    {
+      "cve": "CVE-2026-60137",
+      "name": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "dateAdded": "2026-07-21",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-63030",
+      "name": "WordPress Core Interpretation Conflict Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "dateAdded": "2026-07-21",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-0770",
+      "name": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
+      "vendor": "Langflow",
+      "product": "Langflow",
+      "dateAdded": "2026-07-21",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-27137",
+      "name": "DD-WRT Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "DD-WRT",
+      "product": "DD-WRT",
+      "dateAdded": "2026-07-21",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-58644",
       "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "Fortinet",
       "product": "FortiSandbox",
       "dateAdded": "2026-07-16",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-39808",
-      "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiSandbox",
-      "dateAdded": "2026-07-16",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-46817",
-      "name": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
-      "vendor": "Oracle",
-      "product": "E-Business Suite",
-      "dateAdded": "2026-07-15",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2023-4346",
-      "name": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
-      "vendor": "KNX Association",
-      "product": "KNX Protocol Connection Authorization Option 1",
-      "dateAdded": "2026-07-15",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-56155",
-      "name": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
-      "vendor": "Microsoft",
-      "product": "Active Directory Federation Services",
-      "dateAdded": "2026-07-14",
       "ransomware": false
     }
   ]
