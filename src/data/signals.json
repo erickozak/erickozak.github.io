@@ -1,8 +1,24 @@
 {
-  "updated": "2026-07-22T08:45:30.758Z",
+  "updated": "2026-07-23T08:44:51.633Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.21",
+  "catalogVersion": "2026.07.22",
   "items": [
+    {
+      "cve": "CVE-2026-16232",
+      "name": "Check Point SmartConsole Improper Authentication Vulnerability",
+      "vendor": "Check Point",
+      "product": "SmartConsole",
+      "dateAdded": "2026-07-22",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-50522",
+      "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "dateAdded": "2026-07-22",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-60137",
       "name": "WordPress Core SQL Injection Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "DD-WRT",
       "product": "DD-WRT",
       "dateAdded": "2026-07-21",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-58644",
-      "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "dateAdded": "2026-07-16",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-25089",
-      "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiSandbox",
-      "dateAdded": "2026-07-16",
       "ransomware": false
     }
   ]
