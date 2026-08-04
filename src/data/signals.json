@@ -1,8 +1,16 @@
 {
-  "updated": "2026-07-30T09:03:06.875Z",
+  "updated": "2026-08-04T09:09:25.842Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.07.29",
+  "catalogVersion": "2026.08.03",
   "items": [
+    {
+      "cve": "CVE-2026-18577",
+      "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "dateAdded": "2026-08-03",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-20316",
       "name": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
@@ -41,14 +49,6 @@
       "vendor": "Microsoft",
       "product": "SharePoint",
       "dateAdded": "2026-07-22",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-60137",
-      "name": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "dateAdded": "2026-07-21",
       "ransomware": false
     }
   ]
