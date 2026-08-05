@@ -1,8 +1,32 @@
 {
-  "updated": "2026-08-04T09:09:25.842Z",
+  "updated": "2026-08-05T09:06:13.614Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.03",
+  "catalogVersion": "2026.08.04",
   "items": [
+    {
+      "cve": "CVE-2026-18556",
+      "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "dateAdded": "2026-08-04",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-34486",
+      "name": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+      "vendor": "Apache",
+      "product": "Tomcat",
+      "dateAdded": "2026-08-04",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-9198",
+      "name": "IBM Langflow Code Injection Vulnerability",
+      "vendor": "IBM",
+      "product": "Langflow",
+      "dateAdded": "2026-08-04",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-18577",
       "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
@@ -25,30 +49,6 @@
       "vendor": "Fortinet",
       "product": "FortiOS",
       "dateAdded": "2026-07-27",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-16812",
-      "name": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "dateAdded": "2026-07-27",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-16232",
-      "name": "Check Point SmartConsole Improper Authentication Vulnerability",
-      "vendor": "Check Point",
-      "product": "SmartConsole",
-      "dateAdded": "2026-07-22",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-50522",
-      "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "dateAdded": "2026-07-22",
       "ransomware": false
     }
   ]
