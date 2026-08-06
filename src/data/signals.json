@@ -1,8 +1,16 @@
 {
-  "updated": "2026-08-05T09:06:13.614Z",
+  "updated": "2026-08-06T09:06:40.796Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.04",
+  "catalogVersion": "2026.08.05",
   "items": [
+    {
+      "cve": "CVE-2026-63077",
+      "name": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
+      "vendor": "JetBrains",
+      "product": "TeamCity",
+      "dateAdded": "2026-08-05",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-18556",
       "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
@@ -41,14 +49,6 @@
       "vendor": "Cisco",
       "product": "Secure Firewall Management Center (FMC)",
       "dateAdded": "2026-07-29",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2025-68686",
-      "name": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiOS",
-      "dateAdded": "2026-07-27",
       "ransomware": false
     }
   ]
