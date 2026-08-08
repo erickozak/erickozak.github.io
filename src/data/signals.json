@@ -1,8 +1,16 @@
 {
-  "updated": "2026-08-06T09:06:40.796Z",
+  "updated": "2026-08-08T07:16:38.308Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.05",
+  "catalogVersion": "2026.08.07",
   "items": [
+    {
+      "cve": "CVE-2026-8037",
+      "name": "Progress LoadMaster Command Injection Vulnerability",
+      "vendor": "Progress",
+      "product": "LoadMaster",
+      "dateAdded": "2026-08-07",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-63077",
       "name": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
@@ -41,14 +49,6 @@
       "vendor": "N-able",
       "product": "N-central",
       "dateAdded": "2026-08-03",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-20316",
-      "name": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC)",
-      "dateAdded": "2026-07-29",
       "ransomware": false
     }
   ]
