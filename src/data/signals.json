@@ -1,8 +1,40 @@
 {
-  "updated": "2026-08-18T07:05:05.878Z",
+  "updated": "2026-08-19T07:05:53.747Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.17",
+  "catalogVersion": "2026.08.18",
   "items": [
+    {
+      "cve": "CVE-2026-33824",
+      "name": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Internet Key Exchange (IKE) Service Extensions",
+      "dateAdded": "2026-08-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-59310",
+      "name": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "dateAdded": "2026-08-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-55040",
+      "name": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "dateAdded": "2026-08-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-65400",
+      "name": "Apple macOS Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "macOS",
+      "dateAdded": "2026-08-18",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2025-62593",
       "name": "Ray-Project Ray Code Injection Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "Cisco",
       "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
       "dateAdded": "2026-08-11",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-68820",
-      "name": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows Ancillary Function Driver for WinSock ",
-      "dateAdded": "2026-08-11",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-72898",
-      "name": "Metabase SQL Injection Vulnerability",
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "dateAdded": "2026-08-11",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-8037",
-      "name": "Progress LoadMaster Command Injection Vulnerability",
-      "vendor": "Progress",
-      "product": "LoadMaster",
-      "dateAdded": "2026-08-07",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-63077",
-      "name": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
-      "vendor": "JetBrains",
-      "product": "TeamCity",
-      "dateAdded": "2026-08-05",
       "ransomware": false
     }
   ]
