@@ -1,8 +1,24 @@
 {
-  "updated": "2026-08-20T07:06:52.877Z",
+  "updated": "2026-08-21T07:08:22.613Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.19",
+  "catalogVersion": "2026.08.20",
   "items": [
+    {
+      "cve": "CVE-2026-72530",
+      "name": "TrueConf Server Code Injection Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "dateAdded": "2026-08-20",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-72529",
+      "name": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "dateAdded": "2026-08-20",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-64849",
       "name": "MLflow Server-Side Request Forgery Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "Microsoft",
       "product": "SharePoint",
       "dateAdded": "2026-08-18",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-65400",
-      "name": "Apple macOS Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "macOS",
-      "dateAdded": "2026-08-18",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2025-62593",
-      "name": "Ray-Project Ray Code Injection Vulnerability",
-      "vendor": "Ray-Project",
-      "product": "Ray",
-      "dateAdded": "2026-08-17",
       "ransomware": false
     }
   ]
