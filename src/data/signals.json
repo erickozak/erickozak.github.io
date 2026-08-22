@@ -1,8 +1,16 @@
 {
-  "updated": "2026-08-21T07:08:22.613Z",
+  "updated": "2026-08-22T06:59:45.380Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.20",
+  "catalogVersion": "2026.08.21",
   "items": [
+    {
+      "cve": "CVE-2026-73570",
+      "name": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+      "vendor": "Synacor",
+      "product": "Zimbra Collaboration Suite (ZCS)",
+      "dateAdded": "2026-08-21",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-72530",
       "name": "TrueConf Server Code Injection Vulnerability",
@@ -40,14 +48,6 @@
       "name": "Broadcom VMware vCenter Path Traversal Vulnerability",
       "vendor": "Broadcom",
       "product": "VMware vCenter",
-      "dateAdded": "2026-08-18",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-55040",
-      "name": "Microsoft SharePoint Weak Authentication Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
       "dateAdded": "2026-08-18",
       "ransomware": false
     }
