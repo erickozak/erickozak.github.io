@@ -1,8 +1,16 @@
 {
-  "updated": "2026-08-25T07:08:56.775Z",
+  "updated": "2026-08-26T07:09:20.023Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.24",
+  "catalogVersion": "2026.08.25",
   "items": [
+    {
+      "cve": "CVE-2026-60004",
+      "name": "Gitea Code Injection Vulnerability",
+      "vendor": "Gitea",
+      "product": "Gitea",
+      "dateAdded": "2026-08-25",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-21962",
       "name": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
@@ -41,14 +49,6 @@
       "vendor": "MLflow",
       "product": "MLflow",
       "dateAdded": "2026-08-19",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-33824",
-      "name": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Internet Key Exchange (IKE) Service Extensions",
-      "dateAdded": "2026-08-18",
       "ransomware": false
     }
   ]
