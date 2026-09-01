@@ -1,8 +1,24 @@
 {
-  "updated": "2026-08-27T17:38:54.737Z",
+  "updated": "2026-09-01T11:40:55.540Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.27",
+  "catalogVersion": "2026.08.31",
   "items": [
+    {
+      "cve": "CVE-2026-82078",
+      "name": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "dateAdded": "2026-08-31",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-81578",
+      "name": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "dateAdded": "2026-08-31",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2023-49105",
       "name": "ownCloud Improper Authentication Vulnerability",
@@ -32,22 +48,6 @@
       "name": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
       "vendor": "Ajax.NET Professional",
       "product": "Ajax.NET Professional",
-      "dateAdded": "2026-08-26",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2015-3246",
-      "name": "Red Hat Libuser Race Condition Vulnerability",
-      "vendor": "Red Hat",
-      "product": "Libuser",
-      "dateAdded": "2026-08-26",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2015-5287",
-      "name": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
-      "vendor": "Red Hat",
-      "product": "Automatic Bug Reporting Tool",
       "dateAdded": "2026-08-26",
       "ransomware": false
     }
