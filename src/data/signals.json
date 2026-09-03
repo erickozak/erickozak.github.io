@@ -1,54 +1,54 @@
 {
-  "updated": "2026-09-01T11:40:55.540Z",
+  "updated": "2026-09-03T11:16:46.044Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.08.31",
+  "catalogVersion": "2026.09.02",
   "items": [
     {
-      "cve": "CVE-2026-82078",
-      "name": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "dateAdded": "2026-08-31",
+      "cve": "CVE-2026-59822",
+      "name": "BerriAI LiteLLM Improper Authentication Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "dateAdded": "2026-09-02",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-81578",
-      "name": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "dateAdded": "2026-08-31",
+      "cve": "CVE-2026-48710",
+      "name": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability",
+      "vendor": "Kludex",
+      "product": "Starlette",
+      "dateAdded": "2026-09-02",
       "ransomware": false
     },
     {
-      "cve": "CVE-2023-49105",
-      "name": "ownCloud Improper Authentication Vulnerability",
-      "vendor": "ownCloud",
-      "product": "ownCloud",
-      "dateAdded": "2026-08-27",
+      "cve": "CVE-2026-49869",
+      "name": "Kestra OSS OS Command Injection Vulnerability",
+      "vendor": "Kestra",
+      "product": "Kestra OSS",
+      "dateAdded": "2026-09-02",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-53362",
-      "name": "Linux Kernel Unspecified Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "dateAdded": "2026-08-27",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-66384",
-      "name": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
+      "cve": "CVE-2026-82329",
+      "name": "JFrog Artifactory Improper Authentication Vulnerability",
       "vendor": "JFrog",
       "product": "Artifactory",
-      "dateAdded": "2026-08-27",
+      "dateAdded": "2026-09-02",
       "ransomware": false
     },
     {
-      "cve": "CVE-2021-23758",
-      "name": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Ajax.NET Professional",
-      "product": "Ajax.NET Professional",
-      "dateAdded": "2026-08-26",
+      "cve": "CVE-2026-9586",
+      "name": "Sangoma Switchvox SQL Injection Vulnerability",
+      "vendor": "Sangoma",
+      "product": "Switchvox",
+      "dateAdded": "2026-09-02",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-83548",
+      "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "dateAdded": "2026-09-02",
       "ransomware": false
     }
   ]
