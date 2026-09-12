@@ -1,8 +1,40 @@
 {
-  "updated": "2026-09-11T11:23:28.644Z",
+  "updated": "2026-09-12T10:49:09.429Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.10",
+  "catalogVersion": "2026.09.11",
   "items": [
+    {
+      "cve": "CVE-2026-84869",
+      "name": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "vendor": "ConnectWise",
+      "product": "ScreenConnect",
+      "dateAdded": "2026-09-11",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-42016",
+      "name": "JFrog Artifactory Incorrect Authorization Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "dateAdded": "2026-09-11",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-42018",
+      "name": "JFrog Artifactory Improper Authentication Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "dateAdded": "2026-09-11",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-85706",
+      "name": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "dateAdded": "2026-09-11",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-86060",
       "name": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "MikroTik",
       "product": "RouterOS",
       "dateAdded": "2026-09-10",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-19490",
-      "name": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "dateAdded": "2026-09-09",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2025-25249",
-      "name": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
-      "vendor": "Fortinet",
-      "product": "Multiple Products",
-      "dateAdded": "2026-09-09",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-87491",
-      "name": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "dateAdded": "2026-09-09",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-20079",
-      "name": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
-      "dateAdded": "2026-09-09",
       "ransomware": false
     }
   ]
