@@ -1,8 +1,32 @@
 {
-  "updated": "2026-09-17T11:44:03.915Z",
+  "updated": "2026-09-19T11:01:21.830Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.16",
+  "catalogVersion": "2026.09.18",
   "items": [
+    {
+      "cve": "CVE-2025-39964",
+      "name": "Linux Kernel Race Condition Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "dateAdded": "2026-09-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-53266",
+      "name": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "dateAdded": "2026-09-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-39682",
+      "name": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "dateAdded": "2026-09-18",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-58704",
       "name": "Google Pixel Improper Authorization Vulnerability",
@@ -25,30 +49,6 @@
       "vendor": "Acronis",
       "product": "Backup",
       "dateAdded": "2026-09-16",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-76461",
-      "name": "Cisco Secure Email Gateway SQL Injection Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "dateAdded": "2026-09-14",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-84869",
-      "name": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
-      "vendor": "ConnectWise",
-      "product": "ScreenConnect",
-      "dateAdded": "2026-09-11",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-42016",
-      "name": "JFrog Artifactory Incorrect Authorization Vulnerability",
-      "vendor": "JFrog",
-      "product": "Artifactory",
-      "dateAdded": "2026-09-11",
       "ransomware": false
     }
   ]
