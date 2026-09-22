@@ -1,8 +1,16 @@
 {
-  "updated": "2026-09-19T11:01:21.830Z",
+  "updated": "2026-09-22T11:40:58.303Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.18",
+  "catalogVersion": "2026.09.21",
   "items": [
+    {
+      "cve": "CVE-2026-7273",
+      "name": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "Zyxel",
+      "product": "GS1900 Series Switches",
+      "dateAdded": "2026-09-21",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2025-39964",
       "name": "Linux Kernel Race Condition Vulnerability",
@@ -40,14 +48,6 @@
       "name": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
       "vendor": "Cisco",
       "product": "Identity Services Engine",
-      "dateAdded": "2026-09-16",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-87886",
-      "name": "Acronis Backup Incorrect Default Permissions Vulnerability",
-      "vendor": "Acronis",
-      "product": "Backup",
       "dateAdded": "2026-09-16",
       "ransomware": false
     }
