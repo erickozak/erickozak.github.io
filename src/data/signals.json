@@ -1,8 +1,40 @@
 {
-  "updated": "2026-09-22T11:40:58.303Z",
+  "updated": "2026-09-23T11:39:24.407Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.21",
+  "catalogVersion": "2026.09.22",
   "items": [
+    {
+      "cve": "CVE-2026-93952",
+      "name": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "dateAdded": "2026-09-22",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-94127",
+      "name": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+      "vendor": "F5",
+      "product": "BIG-IP APM",
+      "dateAdded": "2026-09-22",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-93616",
+      "name": "Check Point Multiple Products Path Traversal Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "dateAdded": "2026-09-22",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-85102",
+      "name": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "dateAdded": "2026-09-22",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-7273",
       "name": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "Linux",
       "product": "Kernel",
       "dateAdded": "2026-09-18",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-53266",
-      "name": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "dateAdded": "2026-09-18",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2025-39682",
-      "name": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "dateAdded": "2026-09-18",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-58704",
-      "name": "Google Pixel Improper Authorization Vulnerability",
-      "vendor": "Google",
-      "product": "Pixel",
-      "dateAdded": "2026-09-16",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-76460",
-      "name": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
-      "vendor": "Cisco",
-      "product": "Identity Services Engine",
-      "dateAdded": "2026-09-16",
       "ransomware": false
     }
   ]
