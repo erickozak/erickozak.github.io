@@ -1,8 +1,32 @@
 {
-  "updated": "2026-09-25T11:52:41.346Z",
+  "updated": "2026-09-26T11:26:54.739Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.24",
+  "catalogVersion": "2026.09.25",
   "items": [
+    {
+      "cve": "CVE-2026-67279",
+      "name": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "dateAdded": "2026-09-25",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-65660",
+      "name": "Microsoft SharePoint Code Injection Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "dateAdded": "2026-09-25",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-87902",
+      "name": "WordPress Core Remote File Inclusion Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "dateAdded": "2026-09-25",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-5430",
       "name": "WSO2 Multiple Products Path Traversal Vulnerability ",
@@ -24,30 +48,6 @@
       "name": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
       "vendor": "Arista",
       "product": "VeloCloud Orchestrator",
-      "dateAdded": "2026-09-22",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-94127",
-      "name": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
-      "vendor": "F5",
-      "product": "BIG-IP APM",
-      "dateAdded": "2026-09-22",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-93616",
-      "name": "Check Point Multiple Products Path Traversal Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "dateAdded": "2026-09-22",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-85102",
-      "name": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
       "dateAdded": "2026-09-22",
       "ransomware": false
     }
