@@ -1,8 +1,24 @@
 {
-  "updated": "2026-09-26T11:26:54.739Z",
+  "updated": "2026-09-28T13:58:06.267Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.25",
+  "catalogVersion": "2026.09.27",
   "items": [
+    {
+      "cve": "CVE-2026-88772",
+      "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "dateAdded": "2026-09-27",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-88771",
+      "name": "Citrix NetScaler Improper Input Validation Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "dateAdded": "2026-09-27",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-67279",
       "name": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "WSO2",
       "product": "Multiple Products",
       "dateAdded": "2026-09-24",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-71362",
-      "name": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento ",
-      "dateAdded": "2026-09-24",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-93952",
-      "name": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "dateAdded": "2026-09-22",
       "ransomware": false
     }
   ]
