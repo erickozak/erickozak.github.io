@@ -1,8 +1,16 @@
 {
-  "updated": "2026-09-28T13:58:06.267Z",
+  "updated": "2026-09-30T12:37:08.600Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.27",
+  "catalogVersion": "2026.09.29",
   "items": [
+    {
+      "cve": "CVE-2026-86950",
+      "name": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "dateAdded": "2026-09-29",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-88772",
       "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
@@ -41,14 +49,6 @@
       "vendor": "WordPress",
       "product": "Core",
       "dateAdded": "2026-09-25",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-5430",
-      "name": "WSO2 Multiple Products Path Traversal Vulnerability ",
-      "vendor": "WSO2",
-      "product": "Multiple Products",
-      "dateAdded": "2026-09-24",
       "ransomware": false
     }
   ]
