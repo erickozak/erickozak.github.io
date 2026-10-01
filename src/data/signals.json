@@ -1,8 +1,16 @@
 {
-  "updated": "2026-09-30T12:37:08.600Z",
+  "updated": "2026-10-01T13:18:28.079Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.09.29",
+  "catalogVersion": "2026.09.30",
   "items": [
+    {
+      "cve": "CVE-2026-76504",
+      "name": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+      "vendor": "Cisco",
+      "product": "Catalyst SD-WAN Manager",
+      "dateAdded": "2026-09-30",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-86950",
       "name": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
@@ -40,14 +48,6 @@
       "name": "Microsoft SharePoint Code Injection Vulnerability",
       "vendor": "Microsoft",
       "product": "SharePoint",
-      "dateAdded": "2026-09-25",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-87902",
-      "name": "WordPress Core Remote File Inclusion Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
       "dateAdded": "2026-09-25",
       "ransomware": false
     }
