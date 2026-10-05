@@ -1,8 +1,16 @@
 {
-  "updated": "2026-10-03T11:41:18.701Z",
+  "updated": "2026-10-05T14:43:02.567Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.02",
+  "catalogVersion": "2026.10.04",
   "items": [
+    {
+      "cve": "CVE-2026-88779",
+      "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "dateAdded": "2026-10-04",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-102490",
       "name": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
@@ -41,14 +49,6 @@
       "vendor": "Apple",
       "product": "Multiple Products",
       "dateAdded": "2026-09-29",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-88772",
-      "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "dateAdded": "2026-09-27",
       "ransomware": false
     }
   ]
