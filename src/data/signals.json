@@ -1,54 +1,54 @@
 {
-  "updated": "2026-10-05T14:43:02.567Z",
+  "updated": "2026-10-09T13:19:43.335Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.04",
+  "catalogVersion": "2026.10.08",
   "items": [
+    {
+      "cve": "CVE-2015-5477",
+      "name": " ISC BIND Data Processing Errors Vulnerability",
+      "vendor": "ISC",
+      "product": "BIND",
+      "dateAdded": "2026-10-08",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-3081",
+      "name": "Apache Struts Command Injection Vulnerability",
+      "vendor": "Apache",
+      "product": "Struts",
+      "dateAdded": "2026-10-08",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-22894",
+      "name": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+      "vendor": "Strapi",
+      "product": "Strapi",
+      "dateAdded": "2026-10-08",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-3199",
+      "name": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
+      "vendor": "ONLYOFFICE",
+      "product": "Docs",
+      "dateAdded": "2026-10-08",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-3306",
+      "name": "ProFTPD Improper Access Control Vulnerability",
+      "vendor": "ProFTPD",
+      "product": "ProFTPD",
+      "dateAdded": "2026-10-08",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-88779",
       "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
       "vendor": "Citrix",
       "product": "NetScaler",
       "dateAdded": "2026-10-04",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-102490",
-      "name": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "dateAdded": "2026-10-02",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-102489",
-      "name": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "dateAdded": "2026-10-02",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-104286",
-      "name": "Fortinet FortiMail Path Traversal Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiMail",
-      "dateAdded": "2026-10-01",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-76504",
-      "name": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manager",
-      "dateAdded": "2026-09-30",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-86950",
-      "name": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "dateAdded": "2026-09-29",
       "ransomware": false
     }
   ]
