@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-09T13:19:43.335Z",
+  "updated": "2026-10-14T11:55:06.807Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.08",
+  "catalogVersion": "2026.10.13",
   "items": [
+    {
+      "cve": "CVE-2026-104935",
+      "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "dateAdded": "2026-10-13",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-96951",
+      "name": "Microsoft Windows Command Injection Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "dateAdded": "2026-10-13",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2015-5477",
       "name": " ISC BIND Data Processing Errors Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "ONLYOFFICE",
       "product": "Docs",
       "dateAdded": "2026-10-08",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2015-3306",
-      "name": "ProFTPD Improper Access Control Vulnerability",
-      "vendor": "ProFTPD",
-      "product": "ProFTPD",
-      "dateAdded": "2026-10-08",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-88779",
-      "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "dateAdded": "2026-10-04",
       "ransomware": false
     }
   ]
