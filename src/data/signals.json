@@ -1,8 +1,40 @@
 {
-  "updated": "2026-10-14T11:55:06.807Z",
+  "updated": "2026-10-15T11:31:37.439Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.13",
+  "catalogVersion": "2026.10.14",
   "items": [
+    {
+      "cve": "CVE-2026-105134",
+      "name": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "dateAdded": "2026-10-14",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-76519",
+      "name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "dateAdded": "2026-10-14",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-105133",
+      "name": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "dateAdded": "2026-10-14",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-0322",
+      "name": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "dateAdded": "2026-10-14",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-104935",
       "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "Microsoft",
       "product": "Windows",
       "dateAdded": "2026-10-13",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2015-5477",
-      "name": " ISC BIND Data Processing Errors Vulnerability",
-      "vendor": "ISC",
-      "product": "BIND",
-      "dateAdded": "2026-10-08",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2016-3081",
-      "name": "Apache Struts Command Injection Vulnerability",
-      "vendor": "Apache",
-      "product": "Struts",
-      "dateAdded": "2026-10-08",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2023-22894",
-      "name": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
-      "vendor": "Strapi",
-      "product": "Strapi",
-      "dateAdded": "2026-10-08",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2021-3199",
-      "name": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
-      "vendor": "ONLYOFFICE",
-      "product": "Docs",
-      "dateAdded": "2026-10-08",
       "ransomware": false
     }
   ]
