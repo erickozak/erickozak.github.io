@@ -1,8 +1,16 @@
 {
-  "updated": "2026-10-15T11:31:37.439Z",
+  "updated": "2026-10-16T11:26:38.411Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.14",
+  "catalogVersion": "2026.10.15",
   "items": [
+    {
+      "cve": "CVE-2026-21589",
+      "name": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "dateAdded": "2026-10-15",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-105134",
       "name": "Ahsay AhsayCBS Command Injection Vulnerability",
@@ -40,14 +48,6 @@
       "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
       "vendor": "Ivanti",
       "product": "Connect Secure",
-      "dateAdded": "2026-10-13",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-96951",
-      "name": "Microsoft Windows Command Injection Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
       "dateAdded": "2026-10-13",
       "ransomware": false
     }
