@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-16T11:26:38.411Z",
+  "updated": "2026-10-17T10:46:37.184Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.15",
+  "catalogVersion": "2026.10.16",
   "items": [
+    {
+      "cve": "CVE-2026-102764",
+      "name": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "dateAdded": "2026-10-16",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-61624",
+      "name": "Fortinet Multiple Products Path Traversal Vulnerability",
+      "vendor": "Fortinet",
+      "product": "Multiple Products",
+      "dateAdded": "2026-10-16",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-21589",
       "name": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "Ahsay",
       "product": "AhsayCBS",
       "dateAdded": "2026-10-14",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-0322",
-      "name": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "dateAdded": "2026-10-14",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-104935",
-      "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "dateAdded": "2026-10-13",
       "ransomware": false
     }
   ]
