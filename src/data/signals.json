@@ -1,54 +1,54 @@
 {
-  "updated": "2026-10-17T10:46:37.184Z",
+  "updated": "2026-10-21T11:51:34.635Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.16",
+  "catalogVersion": "2026.10.20",
   "items": [
     {
-      "cve": "CVE-2026-102764",
-      "name": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "dateAdded": "2026-10-16",
+      "cve": "CVE-2026-106931",
+      "name": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+      "vendor": "EG Secure Solutions",
+      "product": "SiteGuard Server Edition",
+      "dateAdded": "2026-10-20",
       "ransomware": false
     },
     {
-      "cve": "CVE-2025-61624",
-      "name": "Fortinet Multiple Products Path Traversal Vulnerability",
-      "vendor": "Fortinet",
-      "product": "Multiple Products",
-      "dateAdded": "2026-10-16",
+      "cve": "CVE-2026-96656",
+      "name": "Plex Media Server External Control of File Name or Path Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "dateAdded": "2026-10-20",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-21589",
-      "name": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "vendor": "Atlassian",
-      "product": "Multiple Products",
-      "dateAdded": "2026-10-15",
+      "cve": "CVE-2026-96655",
+      "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "dateAdded": "2026-10-20",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-105134",
-      "name": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "dateAdded": "2026-10-14",
+      "cve": "CVE-2026-96654",
+      "name": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "dateAdded": "2026-10-20",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-76519",
-      "name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "dateAdded": "2026-10-14",
+      "cve": "CVE-2026-96652",
+      "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "dateAdded": "2026-10-20",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-105133",
-      "name": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "dateAdded": "2026-10-14",
+      "cve": "CVE-2026-110936",
+      "name": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+      "vendor": "Siemens",
+      "product": "Software Center",
+      "dateAdded": "2026-10-20",
       "ransomware": false
     }
   ]
