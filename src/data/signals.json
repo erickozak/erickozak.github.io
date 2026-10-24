@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-21T11:51:34.635Z",
+  "updated": "2026-10-24T11:03:42.634Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.20",
+  "catalogVersion": "2026.10.23",
   "items": [
+    {
+      "cve": "CVE-2026-114625",
+      "name": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "dateAdded": "2026-10-23",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-110447",
+      "name": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+      "vendor": "Collabora",
+      "product": "Collabora Online – Built-in CODE Server",
+      "dateAdded": "2026-10-23",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-106931",
       "name": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
@@ -32,22 +48,6 @@
       "name": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
       "vendor": "Plex",
       "product": "Media Server",
-      "dateAdded": "2026-10-20",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-96652",
-      "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "dateAdded": "2026-10-20",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-110936",
-      "name": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-      "vendor": "Siemens",
-      "product": "Software Center",
       "dateAdded": "2026-10-20",
       "ransomware": false
     }
