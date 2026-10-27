@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-24T11:03:42.634Z",
+  "updated": "2026-10-27T12:14:19.536Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.23",
+  "catalogVersion": "2026.10.26",
   "items": [
+    {
+      "cve": "CVE-2026-109618",
+      "name": "PHP Memory Corruption Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "dateAdded": "2026-10-26",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-109619",
+      "name": "PHP Stale Internal Request-State Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "dateAdded": "2026-10-26",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-114625",
       "name": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
@@ -30,22 +46,6 @@
     {
       "cve": "CVE-2026-96656",
       "name": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "dateAdded": "2026-10-20",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-96655",
-      "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "dateAdded": "2026-10-20",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-96654",
-      "name": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
       "vendor": "Plex",
       "product": "Media Server",
       "dateAdded": "2026-10-20",
