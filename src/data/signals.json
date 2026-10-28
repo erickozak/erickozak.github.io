@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-27T12:14:19.536Z",
+  "updated": "2026-10-28T12:57:34.013Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.26",
+  "catalogVersion": "2026.10.27",
   "items": [
+    {
+      "cve": "CVE-2026-48356",
+      "name": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "dateAdded": "2026-10-27",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-111497",
+      "name": "Google Brotli Unchecked Return Value Vulnerability",
+      "vendor": "Google",
+      "product": "Brotli",
+      "dateAdded": "2026-10-27",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-109618",
       "name": "PHP Memory Corruption Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "Collabora",
       "product": "Collabora Online – Built-in CODE Server",
       "dateAdded": "2026-10-23",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-106931",
-      "name": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-      "vendor": "EG Secure Solutions",
-      "product": "SiteGuard Server Edition",
-      "dateAdded": "2026-10-20",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-96656",
-      "name": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "dateAdded": "2026-10-20",
       "ransomware": false
     }
   ]
