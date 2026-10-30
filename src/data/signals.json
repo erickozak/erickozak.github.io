@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-29T13:04:07.189Z",
+  "updated": "2026-10-30T12:57:49.148Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.28",
+  "catalogVersion": "2026.10.29",
   "items": [
+    {
+      "cve": "CVE-2026-97229",
+      "name": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "dateAdded": "2026-10-29",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-76418",
+      "name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "dateAdded": "2026-10-29",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-41709",
       "name": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "Google",
       "product": "Brotli",
       "dateAdded": "2026-10-27",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-109618",
-      "name": "PHP Memory Corruption Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "dateAdded": "2026-10-26",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-109619",
-      "name": "PHP Stale Internal Request-State Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "dateAdded": "2026-10-26",
       "ransomware": false
     }
   ]
