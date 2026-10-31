@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-30T12:57:49.148Z",
+  "updated": "2026-10-31T12:33:48.754Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.10.29",
+  "catalogVersion": "2026.10.30",
   "items": [
+    {
+      "cve": "CVE-2026-118527",
+      "name": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "dateAdded": "2026-10-30",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-111357",
+      "name": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "dateAdded": "2026-10-30",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-97229",
       "name": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
@@ -33,22 +49,6 @@
       "vendor": "Linux",
       "product": "Kernel",
       "dateAdded": "2026-10-28",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-48356",
-      "name": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "dateAdded": "2026-10-27",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-111497",
-      "name": "Google Brotli Unchecked Return Value Vulnerability",
-      "vendor": "Google",
-      "product": "Brotli",
-      "dateAdded": "2026-10-27",
       "ransomware": false
     }
   ]
