@@ -1,8 +1,16 @@
 {
-  "updated": "2026-11-04T14:34:43.675Z",
+  "updated": "2026-11-05T14:40:50.397Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.11.03",
+  "catalogVersion": "2026.11.04",
   "items": [
+    {
+      "cve": "CVE-2024-27834",
+      "name": "Apple Multiple Products Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "dateAdded": "2026-11-04",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-119977",
       "name": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
@@ -41,14 +49,6 @@
       "vendor": "Cisco",
       "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
       "dateAdded": "2026-10-29",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-41709",
-      "name": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware ESX",
-      "dateAdded": "2026-10-28",
       "ransomware": false
     }
   ]
