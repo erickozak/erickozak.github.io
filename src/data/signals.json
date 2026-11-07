@@ -1,8 +1,16 @@
 {
-  "updated": "2026-11-05T14:40:50.397Z",
+  "updated": "2026-11-07T13:04:25.273Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.11.04",
+  "catalogVersion": "2026.11.06",
   "items": [
+    {
+      "cve": "CVE-2026-19868",
+      "name": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "dateAdded": "2026-11-06",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2024-27834",
       "name": "Apple Multiple Products Improper Authentication Vulnerability",
@@ -40,14 +48,6 @@
       "name": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
       "vendor": "GitLab",
       "product": "Community Edition and Enterprise Edition",
-      "dateAdded": "2026-10-29",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-76418",
-      "name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
       "dateAdded": "2026-10-29",
       "ransomware": false
     }
