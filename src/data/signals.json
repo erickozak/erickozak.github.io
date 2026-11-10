@@ -1,8 +1,40 @@
 {
-  "updated": "2026-11-07T13:04:25.273Z",
+  "updated": "2026-11-10T14:54:57.839Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.11.06",
+  "catalogVersion": "2026.11.09",
   "items": [
+    {
+      "cve": "CVE-2026-102895",
+      "name": "GPUStack Improper Authentication Vulnerability",
+      "vendor": "GPUStack",
+      "product": "GPUStack",
+      "dateAdded": "2026-11-09",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-123158",
+      "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH",
+      "dateAdded": "2026-11-09",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-116779",
+      "name": "SignalWire FreeSwitch Code Injection Vulnerability",
+      "vendor": "SignalWire",
+      "product": "FreeSwitch",
+      "dateAdded": "2026-11-09",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-123218",
+      "name": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+      "vendor": "IBM",
+      "product": "Aspera Faspex",
+      "dateAdded": "2026-11-09",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-19868",
       "name": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "Apple",
       "product": "Multiple Products",
       "dateAdded": "2026-11-04",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-119977",
-      "name": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
-      "vendor": "WordPress",
-      "product": "WordPress Core",
-      "dateAdded": "2026-11-03",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-118527",
-      "name": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "dateAdded": "2026-10-30",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-111357",
-      "name": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "dateAdded": "2026-10-30",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-97229",
-      "name": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "dateAdded": "2026-10-29",
       "ransomware": false
     }
   ]
