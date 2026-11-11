@@ -1,54 +1,54 @@
 {
-  "updated": "2026-11-10T14:54:57.839Z",
+  "updated": "2026-11-11T14:25:15.261Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.11.09",
+  "catalogVersion": "2026.11.10",
   "items": [
     {
-      "cve": "CVE-2026-102895",
-      "name": "GPUStack Improper Authentication Vulnerability",
-      "vendor": "GPUStack",
-      "product": "GPUStack",
-      "dateAdded": "2026-11-09",
+      "cve": "CVE-2026-124194",
+      "name": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Office",
+      "dateAdded": "2026-11-10",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-123158",
-      "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH",
-      "dateAdded": "2026-11-09",
+      "cve": "CVE-2026-111793",
+      "name": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "vendor": "Openwave Messaging Limited",
+      "product": "Webtop Media Transcoder",
+      "dateAdded": "2026-11-10",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-116779",
-      "name": "SignalWire FreeSwitch Code Injection Vulnerability",
-      "vendor": "SignalWire",
-      "product": "FreeSwitch",
-      "dateAdded": "2026-11-09",
+      "cve": "CVE-2026-20320",
+      "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "vendor": "Cisco",
+      "product": "BroadWorks",
+      "dateAdded": "2026-11-10",
       "ransomware": false
     },
     {
-      "cve": "CVE-2026-123218",
-      "name": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
-      "vendor": "IBM",
-      "product": "Aspera Faspex",
-      "dateAdded": "2026-11-09",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-19868",
-      "name": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SonicOS SSLVPN",
-      "dateAdded": "2026-11-06",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2024-27834",
-      "name": "Apple Multiple Products Improper Authentication Vulnerability",
-      "vendor": "Apple",
+      "cve": "CVE-2026-111560",
+      "name": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+      "vendor": "Barracuda Networks",
       "product": "Multiple Products",
-      "dateAdded": "2026-11-04",
+      "dateAdded": "2026-11-10",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-116606",
+      "name": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "dateAdded": "2026-11-10",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-125350",
+      "name": "Google Chromium Use-After-Free Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium",
+      "dateAdded": "2026-11-10",
       "ransomware": false
     }
   ]
