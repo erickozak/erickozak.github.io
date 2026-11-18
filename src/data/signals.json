@@ -1,8 +1,16 @@
 {
-  "updated": "2026-11-14T13:33:06.224Z",
+  "updated": "2026-11-18T15:41:36.580Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.11.13",
+  "catalogVersion": "2026.11.17",
   "items": [
+    {
+      "cve": "CVE-2026-115731",
+      "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Perforce",
+      "product": "Puppet Enterprise",
+      "dateAdded": "2026-11-17",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-114713",
       "name": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
@@ -40,14 +48,6 @@
       "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
       "vendor": "Cisco",
       "product": "BroadWorks",
-      "dateAdded": "2026-11-10",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-111560",
-      "name": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Multiple Products",
       "dateAdded": "2026-11-10",
       "ransomware": false
     }
