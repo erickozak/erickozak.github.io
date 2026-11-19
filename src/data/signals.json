@@ -1,8 +1,40 @@
 {
-  "updated": "2026-11-18T15:41:36.580Z",
+  "updated": "2026-11-19T15:46:20.424Z",
   "source": "CISA Known Exploited Vulnerabilities catalog",
-  "catalogVersion": "2026.11.17",
+  "catalogVersion": "2026.11.18",
   "items": [
+    {
+      "cve": "CVE-2024-10441",
+      "name": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "vendor": "Synology",
+      "product": "DiskStation Manager (DSM)",
+      "dateAdded": "2026-11-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-40217",
+      "name": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "dateAdded": "2026-11-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-90817",
+      "name": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "vendor": "Vanderbilt University",
+      "product": "Research Electronic Data Capture (REDCap)",
+      "dateAdded": "2026-11-18",
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-90436",
+      "name": "Apache Axis Unsafe Reflection Vulnerability",
+      "vendor": "Apache",
+      "product": "Axis",
+      "dateAdded": "2026-11-18",
+      "ransomware": false
+    },
     {
       "cve": "CVE-2026-115731",
       "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
@@ -17,38 +49,6 @@
       "vendor": "UnrealIRCd",
       "product": "UnrealIRCd",
       "dateAdded": "2026-11-13",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-123039",
-      "name": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "dateAdded": "2026-11-13",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-124194",
-      "name": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Office",
-      "dateAdded": "2026-11-10",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-111793",
-      "name": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-      "vendor": "Openwave Messaging Limited",
-      "product": "Webtop Media Transcoder",
-      "dateAdded": "2026-11-10",
-      "ransomware": false
-    },
-    {
-      "cve": "CVE-2026-20320",
-      "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "vendor": "Cisco",
-      "product": "BroadWorks",
-      "dateAdded": "2026-11-10",
       "ransomware": false
     }
   ]
